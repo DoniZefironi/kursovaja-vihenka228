@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+body.dark {
+    background-color: #000000bb; 
+    color: #fff;
+  }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+}
+.block-sign{
+    margin-left: 33px;
+    padding: 0.5px 11px;
+    border: 0px solid #000000;
+    border-radius: 9px;
+    background-color: #1802025b;
+}
+.admin-only {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.admin-only h2 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.admin-only p {
+  color: #333;
+  font-size: 16px;
+}
+body.dark .block-sign{
+    filter: invert(1);
+}
+body p, a, h1,h2,h3,h4,h5{
+    margin: 0;
+}
+#inour{
+    font-size: 36px;
+}
+ul {
+    list-style-type: none; 
+}
+ul li{
+    font-size: 36px;
+    margin: 10px;
+}
+ul li::before {
+    content: "• "; 
+}
+.searchneeva{
+    content: url("../general/images/searchneeva.png");
+    width: 30%;
+}
+.vivaldineeva{
+    content: url("../general/images/chtoto.png");
+    width: 40%;
+}
+.mesageneeva{
+    content: url("../general/images/menuneeva.png");
+    width: 40%;
+}
+.logo{
+    content: url("../general/images/logo.png");
+    width: 10%;
+}
+.twitter{
+    content: url("../general/images/twitter.png");
+    width: 100%;
+}
+.facebook{
+    content: url("../general/images/facebook.png");
+    width: 100%;
+}
+.inst{
+    content: url("../general/images/instagram.png");
+    width: 100%;
+}
+.in{
+    content: url("../general/images/in.png");
+    width: 100%;
+}
+body.dark .headera{
+    filter:invert(1);
+}
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 10px;
+    width: 90%;
+}
+.header-nav{
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #000000;
+    line-height: 1em;
+    font-size: 1em;
+}
+body.dark .header-nav a{
+    color: #ffffff;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.firstfooter{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.firstfooter p{
+    font-size: 14px;
+    font-weight: bold;
+    width: 120%;
+}
+.blocki{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 96px;
+}
+.first{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.lastfooter{
+    display: flex;
+    align-items: start; 
+    flex-direction: column;
+    gap: 50px;
+}
+.soc{
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    flex-direction: row;
+    gap: 32px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    .searchneeva{
+        content: url("../general/images/searchneeva.png");
+        width: 90%;
+    }
+    .vivaldineeva{
+        content: url("../general/images/chtoto.png");
+        width: 90%;
+    }
+    .mesageneeva{
+        content: url("../general/images/menuneeva.png");
+        width: 90%;
+    }
+    .burger-menu {
+        width: 30px;
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000; 
+      }
+      .burger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .header-block1 {
+        display: none;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        width: 250px;
+        height: auto;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 999; 
+      }
+      
+      .header-block1.open {
+        display: block;
+      }
+      
+      .header-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+    }
+    body.dark .header-nav{
+      background-color: dimgrey;
+    }
+      
+      .header-nav a,
+      .header-nav button {
+        margin: 10px 0;
+        text-decoration: none;
+        color: #333;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: left;
+      }
+      
+      .burger-menu.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .burger-menu.open span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .burger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      
+      body.dark .burger-menu span {
+        background-color: #fff;
+      }
+    }
+    @media (max-width: 767px) {
+footer{
+    flex-direction: column;
+    gap: 20px
+}
+    }

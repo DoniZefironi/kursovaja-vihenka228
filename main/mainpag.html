@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <a class="headera" href="../main/mainpag.html"><img src="../general/images/neeva.png" alt="neeva"></a>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header-block1" id="headerBlock">
+            <nav class="header-nav">
+                <button class="block-sign" id="sign"></button>
+                <a href="../function/function.html" id="feat"></a>
+                <a href="#" id="faq"></a>
+                <a href="#" id="blog"></a>
+                <a href="#" id="press"></a>
+                <a href="../ourstory/story.html" id="abouta"></a>
+                <button class="block-sign" id="reg"></button>
+                <span id="usernameDisplay" style="display: none;"></span>
+                <button class="block-sign" id="logout" style="display: none;"></button>
+                <button class="block-sign" id="languageButton" onclick="toggleLanguage()"></button>
+                <button class="block-sign" id="themeButton" onclick="toggleTheme()"></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="realsearch">
+            <div class="realsearchtext">
+                <p id="real">
+
+                </p>
+                <p id="noads">
+
+                </p>
+                <p id="creat">
+
+                </p>
+                <div class="buttonrealtext">
+                    <div class="custom-search">
+                        <input type="text" class="custom-search-input" placeholder="Enter email to sign up">
+                        <button class="custom-search-botton" type="submit">Get Started</button>  
+                      </div>
+                    <p id="nocred">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="imgrealsearch">
+            </div>
+        </div>
+        <div class="spartphone">
+            <h2 id="did">
+            </h2>
+            <div class="spartphoneimages">
+                <div class="spartphoneimgtext">
+                    <p id="ofyour">
+
+                    </p>
+                    <div class="spartphoneimg1">
+
+                    </div>
+                </div>
+                <div class="spartphoneimgtext">
+                    <p id="realres">
+
+                    </p>
+                    <div class="spartphoneimg2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="featuredby">
+            <h2 id="featuredby"></h2>
+            <div class="featuredbyimages">
+                <div class="featuredbyimg1"></div>
+                <div class="featuredbyimg2"></div>
+                <div class="featuredbyimg3"></div>
+                <div class="featuredbyimg4"></div>
+            </div>
+        </div>
+        <div class="didyouknow">
+            <div class="didyouknowimg">
+            </div>
+            <div class="didyouknowtext">
+                <h2 id="kwo">
+
+                </h2>
+                <p id="oftra">
+
+                </p>
+                <p id="weblock">
+
+                </p>
+                <button class="buttondid" type="submit" id="seepur"></button>
+            </div>
+        </div>
+        <div class="didyouknow1">
+            <div class="didyouknowimg1">
+            </div>
+            <div class="didyouknowtext1">
+                <h2 id="kwo1">
+
+                </h2>
+                <p id="oftra1">
+
+                </p>
+                <p id="weblock1">
+
+                </p>
+                <button class="buttondid1" type="submit" id="seepur1"></button>
+            </div>
+        </div>
+        <div class="joinser">
+            <p id="jsd">
+            </p>
+            <div class="buttonrealtext">
+                <div class="custom-search">
+                    <input type="text" class="custom-search-input" placeholder="Enter email to sign up">
+                    <button class="custom-search-botton" type="submit">Get Started</button>  
+                  </div>
+                <p id="nocred">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="fromthe">
+            <div class="fromthetext">
+                <p id="crea"></p>
+                <p id="byf"></p>
+                <p id="fro"></p>
+                <button class="buttondid2" type="submit" id="seepur2"></button>
+            </div>
+            <div class="fromthetextimages">
+                <div class="firstfromtheimages">
+                    <div class="fromtheimages">
+                        <div class="fromtheimg">
+                        </div>
+                        <p id="spi"></p>
+                        <p id="ceo"></p>
+                    </div>
+                    <div class="fromtheimages">
+                        <div class="fromtheimg2">
+                        </div>
+                        <p id="vivek"></p>
+                        <p id="cof"></p>
+                    </div>
+                </div>
+                <div class="firstfromtheimages">
+                    <div class="fromtheimages">
+                        <div class="fromtheimg3">
+                        </div>
+                        <p id="margo"></p>
+                        <p id="ex"></p>
+                    </div>
+                    <div class="fromtheimages">
+                        <div class="fromtheimg4">
+                        </div>
+                        <p id="bill"></p>
+                        <p id="svp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-section">
+            <h2 id="wh"></h2>
+            <div class="testimonial-blocki">
+                <div class="testimonial-block">
+                    <p id="nee"></p>
+                    <p class="author" id="ret"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="itwi"></p>
+                    <p class="author" id="eng"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="exce"></p>
+                    <p class="author" id="sara"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="users"></p>
+                    <p class="author" id="teac"></p>
+                </div>
+            </div>
+            <div class="testimonial-blocki">
+                <div class="testimonial-block">
+                    <p id="nee1"></p>
+                    <p class="author" id="ret1"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="itwi1"></p>
+                    <p class="author" id="eng1"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="exce1"></p>
+                    <p class="author" id="sara1"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="users1"></p>
+                    <p class="author" id="teac1"></p>
+                </div>
+            </div>
+            <div class="testimonial-blocki">
+                <div class="testimonial-block">
+                    <p id="nee2"></p>
+                    <p class="author" id="ret2"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="itwi2"></p>
+                    <p class="author" id="eng2"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="exce2"></p>
+                    <p class="author" id="sara2"></p>
+                </div>
+                <div class="testimonial-block">
+                    <p id="users2"></p>
+                    <p class="author" id="teac2"></p>
+                </div>
+            </div>
+            <div class="slid user-only" style="display: none;">
+                <button onclick="prevSlide()" id="back" class="sl"></button>
+                <div class="pagination">1/3</div>
+                <button onclick="nextSlide()" id="noback" class="sl"></button>
+            </div>
+        </div>
+        <div class="realsearch1">
+            <div class="realsearchtext1">
+                <p id="bec">
+                </p>
+                <div class="buttonrealtext">
+                    <div class="custom-search">
+                        <input type="text" class="custom-search-input" placeholder="Enter email to sign up">
+                        <button class="custom-search-botton" type="submit">Get Started</button>  
+                      </div>
+                    <p id="nocred">
+                    </p>
+                </div>
+            </div>
+            <div class="imgrealsearch1">
+            </div>
+        </div>
+        <div id="mapModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="admin-only" style="display: none;">
+            <h2>Admin Content</h2>
+            <p>This content is only visible to admin users.</p>
+          </div>
+    </main>
+    <footer>
+        <div class="firstfooter">
+            <div class="logo"></div>
+            <div class="blocki">
+                <div class="first">
+                    <p id="me"></p>
+                    <p id="tures"></p>
+                    <p id="out"></p>
+                    <p id="log"></p>
+                    <p id="ess"></p>
+                    <p id="mmunity"></p>
+                    <p id="earn"></p>
+                </div>
+                <div class="first">
+                    <p id="ntact"></p>
+                    <p id="reers"></p>
+                    <p id="rms"></p>
+                    <p id="ivacy"></p>
+                    <p id="iights"></p>
+                    <p id="DMCA"></p>
+                    <p id="ebawler"></p>
+                </div>
+            </div>
+        </div>
+        <div class="lastfooter">
+            <div class="soc">
+                <div class="twitter"></div>
+                <div class="facebook"></div>
+                <div class="inst"></div>
+                <div class="in"></div>
+            </div>
+            <div>
+                <p><strong>GitHub:</strong> NickName</p>
+                <p><strong>Phone Number:</strong> +375-29-600-13-10</p>
+                <p><strong>Email:</strong> nickname@gmail.com</p>
+                <a href="#" id="openkart"></a>
+            </div>
+                <p>© 2021 Neeva Inc</p>
+        </div>
+    </footer>
+    <script src="../registration/script.js"></script>
+    <script src="../general/translat.js"></script>
+    <script src="../general/map.js"></script>
+    <script src="../general/transition.js"></script>
+    <script src="../general/burger.js"></script>
+    <script src="../general/tema.js"></script>
+    <script src="pagination.js"></script>
+</body>
+</html>

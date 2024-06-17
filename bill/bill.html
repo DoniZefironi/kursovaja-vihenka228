@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="stylebill.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <a class="headera" href="../main/mainpag.html"><img src="../general/images/neeva.png" alt="neeva"></a>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header-block1" id="headerBlock">
+            <nav class="header-nav">
+                <button class="block-sign" id="sign"></button>
+                <a href="../function/function.html" id="feat"></a>
+                <a href="#" id="faq"></a>
+                <a href="#" id="blog"></a>
+                <a href="#" id="press"></a>
+                <a href="../ourstory/story.html" id="abouta"></a>
+                <button class="block-sign" id="reg"></button>
+                <span id="usernameDisplay" style="display: none;"></span>
+                <button class="block-sign" id="logout" style="display: none;"></button>
+                <button class="block-sign" id="languageButton" onclick="toggleLanguage()"></button>
+                <button class="block-sign" id="themeButton" onclick="toggleTheme()"></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <p id="yourpri"></p>
+        <ul>
+            <li id="colle"></li>
+            <li id="ervic"></li>
+            <li id="shar"></li>
+            <li id="nolo"></li>
+        </ul>
+        <div class="cookies"></div>
+        <ul>
+            <li id="isclos"></li>
+            <li id="forma"></li>
+        </ul>
+        <p id="erm"></p>
+        <ul>
+            <li id="onten"></li>
+            <li id="authoriz"></li>
+            <li id="spec"></li>
+            <li id="pyri"></li>
+        </ul>
+        <div id="mapModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="admin-only" style="display: none;">
+            <h2>Admin Content</h2>
+            <p>This content is only visible to admin users.</p>
+          </div>
+    </main>
+    <footer>
+        <div class="firstfooter">
+            <div class="logo"></div>
+            <div class="blocki">
+                <div class="first">
+                    <p id="me"></p>
+                    <p id="tures"></p>
+                    <p id="out"></p>
+                    <p id="log"></p>
+                    <p id="ess"></p>
+                    <p id="mmunity"></p>
+                    <p id="earn"></p>
+                </div>
+                <div class="first">
+                    <p id="ntact"></p>
+                    <p id="reers"></p>
+                    <p id="rms"></p>
+                    <p id="ivacy"></p>
+                    <p id="iights"></p>
+                    <p id="DMCA"></p>
+                    <p id="ebawler"></p>
+                </div>
+            </div>
+        </div>
+        <div class="lastfooter">
+            <div class="soc">
+                <div class="twitter"></div>
+                <div class="facebook"></div>
+                <div class="inst"></div>
+                <div class="in"></div>
+            </div>
+            <div>
+                <p><strong>GitHub:</strong> NickName</p>
+                <p><strong>Phone Number:</strong> +375-29-600-13-10</p>
+                <p><strong>Email:</strong> nickname@gmail.com</p>
+                <a href="#" id="openkart"></a>
+            </div>
+                <p>© 2021 Neeva Inc</p>
+        </div>
+    </footer>
+    <script src="../registration/script.js"></script>
+    <script src="../general/translat.js"></script>
+    <script src="../general/map.js"></script>
+    <script src="../general/transition.js"></script>
+    <script src="../general/burger.js"></script>
+    <script src="../general/tema.js"></script>
+</body>
+</html>
