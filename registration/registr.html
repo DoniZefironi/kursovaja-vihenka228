@@ -24,10 +24,15 @@
     <select id="passwordChoice">
       <option value="manual" selected>Manual input</option>
       <option value="auto">Automatic generation</option>
-  </select>
+    </select>
     <div id="manualPasswordFields">
       <input type="password" id="password">
       <input type="password" id="confirmPassword">
+      <button type="button" id="togglePasswordBtn">Показать</button>
+    </div>
+    <div id="autoPasswordField" style="display: none;">
+      <input type="text" id="autoPassword" readonly>
+      <button type="button" id="toggleAutoPasswordBtn">Показать</button>
     </div>
     <label for="role">Role:</label>
     <select id="role">

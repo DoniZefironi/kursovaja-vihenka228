@@ -81,6 +81,10 @@
         "users1": "I love Neeva because they have removed all the distracting banner ads. Now I can calmly read and enjoy the process.",
         "teac1": "Emily K., writer",
         "openkart": "Open Map",
+        "seofcos": "Use of cookies",
+        "usewecooc": "We use cookies to improve your experience on our website. Do you agree to the use of cookies?",
+        "acceptBtn": "Accept",
+        "declineBtn": "Refuse",
         "back": "<<",
         "noback": ">>"
     },
@@ -166,6 +170,10 @@
         "users1": "Я люблю Neeva за то, что они удалили все отвлекающие рекламные баннеры. Теперь я могу спокойно читать и наслаждаться процессом.",
         "teac1": "Эмили К., писатель",
         "openkart": "Открыть карту",
+        "seofcos": "Использование файлов cookie",
+        "usewecooc": "Мы используем файлы cookie для улучшения вашего опыта на нашем сайте. Вы согласны с использованием файлов cookie?",
+        "acceptBtn": "Принять",
+        "declineBtn": "Отказать",
         "back": "<<",
         "noback": ">>"
     }
