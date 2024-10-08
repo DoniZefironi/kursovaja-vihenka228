@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.textContent = 'Password does not meet the criteria or passwords do not match.';
         return;
       }
-  if (!agreement) {
+
+      if (!agreement) {
         messageDiv.textContent = 'You must agree to the User Agreement.';
         return;
       }
@@ -125,27 +126,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  togglePasswordBtn.onclick = function() {
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-      confirmPasswordInput.type = "text";
-      togglePasswordBtn.textContent = "Скрыть";
-    } else {
-      passwordInput.type = "password";
-      confirmPasswordInput.type = "password";
-      togglePasswordBtn.textContent = "Показать";
-    }
-  };
+  if (togglePasswordBtn) {
+    togglePasswordBtn.onclick = function() {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        confirmPasswordInput.type = "text";
+        togglePasswordBtn.textContent = "Скрыть";
+      } else {
+        passwordInput.type = "password";
+        confirmPasswordInput.type = "password";
+        togglePasswordBtn.textContent = "Показать";
+      }
+    };
+  }
 
-  toggleAutoPasswordBtn.onclick = function() {
-    if (autoPassword.type === "password") {
-      autoPassword.type = "text";
-      toggleAutoPasswordBtn.textContent = "Скрыть";
-    } else {
-      autoPassword.type = "password";
-      toggleAutoPasswordBtn.textContent = "Показать";
-    }
-  };
+  if (toggleAutoPasswordBtn) {
+    toggleAutoPasswordBtn.onclick = function() {
+      if (autoPassword.type === "password") {
+        autoPassword.type = "text";
+        toggleAutoPasswordBtn.textContent = "Скрыть";
+      } else {
+        autoPassword.type = "password";
+        toggleAutoPasswordBtn.textContent = "Показать";
+      }
+    };
+  }
 
   if (loginForm) {
     loginForm.addEventListener('submit', (event) => {
@@ -160,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.textContent = 'Login successful!';
         sessionStorage.setItem('loggedInUser', JSON.stringify(user));
         displayContentBasedOnRole();
-        window.location.href = '../main/mainpag.html'; // Убедитесь, что путь правильный
+        window.location.href = '../main/mainpag.html'; 
       } else {
         messageDiv.textContent = 'Invalid email or password.';
       }
@@ -205,13 +210,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  logoutButton.addEventListener('click', () => {
-    sessionStorage.removeItem('loggedInUser');
-    usernameDisplay.style.display = 'none';
-    logoutButton.style.display = 'none';
-    signButton.style.display = 'inline';
-    autButton.style.display = 'inline';
-  });
+  if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+      sessionStorage.removeItem('loggedInUser');
+      usernameDisplay.style.display = 'none';
+      logoutButton.style.display = 'none';
+      signButton.style.display = 'inline';
+      autButton.style.display = 'inline';
+    });
+  }
 
   window.addEventListener('DOMContentLoaded', () => {
     displayContentBasedOnRole();
